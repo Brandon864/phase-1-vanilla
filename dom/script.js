@@ -61,3 +61,7 @@ const taskSelector = document.querySelector('.task');
 console.log(taskSelector);
 const taskSelectorAll = document.querySelectorAll('.task');
 console.log(taskSelectorAll);
+
+// add task 6 to the UI
+// using innerHTML to insert `<li class="task">task 6</li>` to the UI
+taskList.innerHTML += `<li class="task">task 6</li>`;
