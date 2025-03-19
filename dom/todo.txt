@@ -1,7 +1,8 @@
---> using an array of tasks as the initial data
---> adding tasks to the UI
+--> DOMContentLoaded -- done
+--> using an array of tasks as the initial data -- done
+--> adding tasks to the UI -- done
+--> Checkbox to mark tasks as completed -- done
+--> Styling to make completed tasks appear crossed out -- done
 --> adding unique IDs using UUID
 --> Edit button to modify tasks
 --> Delete button to remove tasks
---> Checkbox to mark tasks as completed
---> Styling to make completed tasks appear crossed out -- done
