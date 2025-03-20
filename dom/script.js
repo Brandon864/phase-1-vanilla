@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const taskText = document.createElement('span');
     taskText.textContent = taskTextValue;
     newTaskListItem.appendChild(taskText);
-    newTaskListItem.textContent = taskTextValue;
+    // newTaskListItem.textContent = taskTextValue;
     const taskList = document.getElementById('taskList');
     taskList.appendChild(newTaskListItem);
 
@@ -63,18 +63,27 @@ document.addEventListener('DOMContentLoaded', function () {
     editBtn.classList.add('edit-btn');
     // attach an editing event listener to the editBtn when clicked
     editBtn.addEventListener('click', () => {
-      const newText = prompt('Edit your task:', taskTextValue.textContent);
+      const newText = prompt('Edit your task:', taskText.textContent);
       if (newText !== null) {
-        taskTextValue.textContent = newText.trim() || taskTextValue.textContent;
+        taskText.textContent = newText.trim() || taskText.textContent;
       }
     });
     // append the editBtn to our task list item
     newTaskListItem.appendChild(editBtn);
 
     // add delete button
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'Delete';
+    deleteBtn.classList.add('delete-btn');
 
     // add event for deleting to the deleteBtn
+    deleteBtn.addEventListener('click', () => {
+      console.log('I was clicked to for delete purposes');
+      newTaskListItem.remove();
+      console.log('a task was removed');
+    });
 
     // append the deleteBtn to the end of the newTaskListItem
+    newTaskListItem.appendChild(deleteBtn);
   }
 });
