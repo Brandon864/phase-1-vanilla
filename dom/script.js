@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const newTaskListItem = document.createElement('li');
     newTaskListItem.classList.add('task'); // newTaskListItem.classList = 'task'
     const taskText = document.createElement('span');
+    taskText.classList.add('task-text');
     taskText.textContent = taskTextValue;
     newTaskListItem.appendChild(taskText);
     // newTaskListItem.textContent = taskTextValue;
@@ -42,15 +43,15 @@ document.addEventListener('DOMContentLoaded', function () {
     checkbox.classList.add('task-checkbox');
 
     if (isCompleted) {
-      newTaskListItem.style.textDecoration = 'line-through';
+      taskText.style.textDecoration = 'line-through';
     }
 
     // toggle completion state when checkbox is clicked
     checkbox.addEventListener('change', function () {
       if (checkbox.checked) {
-        newTaskListItem.style.textDecoration = 'line-through';
+        taskText.style.textDecoration = 'line-through';
       } else {
-        newTaskListItem.style.textDecoration = 'none';
+        taskText.style.textDecoration = 'none';
       }
     });
 
