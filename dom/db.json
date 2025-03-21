@@ -25,18 +25,23 @@
   ],
   "tasks": [
     {
-      "text": "buy groceries, milk, and eggs",
-      "completed": false,
-      "id": "1"
-    },
-    {
       "id": "c968",
       "text": "this is a trial task being added",
-      "completed": false
+      "completed": true
     },
     {
       "id": "0973",
       "text": "recap the concepts for 5 mins",
+      "completed": false
+    },
+    {
+      "id": "8b02",
+      "text": "has it worked?",
+      "completed": false
+    },
+    {
+      "id": "8b04",
+      "text": "explanation for db.json",
       "completed": false
     }
   ]
