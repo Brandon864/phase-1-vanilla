@@ -1,0 +1,43 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "email": "alice@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "email": "bob@example.com"
+    }
+  ],
+  "posts": [
+    {
+      "id": "1",
+      "title": "JSON Server Guide",
+      "content": "Learn how to use JSON Server!"
+    },
+    {
+      "id": 2,
+      "title": "REST API Basics",
+      "content": "Understanding RESTful APIs."
+    }
+  ],
+  "tasks": [
+    {
+      "text": "buy groceries, milk, and eggs",
+      "completed": false,
+      "id": "1"
+    },
+    {
+      "id": "c968",
+      "text": "this is a trial task being added",
+      "completed": false
+    },
+    {
+      "id": "0973",
+      "text": "recap the concepts for 5 mins",
+      "completed": false
+    }
+  ]
+}
