@@ -38,6 +38,5 @@ document.addEventListener('DOMContentLoaded', () => {
     taskText.classList.add('task-text');
     taskText.textContent = task.text;
     newTaskListItem.appendChild(taskText);
-    taskList.appendChild(newTaskListItem);
   }
 });
