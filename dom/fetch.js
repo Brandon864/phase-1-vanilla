@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   // fetch() method --> is used to make requests to a server and get, send, delete data
   // get new tasks, add tasks, update tasks, delete tasks
 
-  const apiUrl = 'http://localhost:5000/tasks';
+  // const apiUrl = 'http://localhost:5000/tasks';
+  const apiUrl = 'https://sample-json.vercel.app/tasks';
 
   const taskList = document.getElementById('taskList');
   //   console.log(taskList);
